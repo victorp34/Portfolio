@@ -1,0 +1,143 @@
+/*------- main -------*/
+section > .row > .text-center > .container {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+/*------- open button -------*/
+@keyframes bottomAnimation {
+    from {
+      transform: translate(-11.5rem, 0);
+    }
+    to {
+      transform: translate(0rem, 0);
+    }
+}
+    
+button.btn {
+    text-decoration: none;
+    border: 0;
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    color: #000;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+    
+button.btn::after {
+    border: 0;
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+    border-radius: 50%;
+    background-color: #007bff;
+    top: 3rem;
+    left: 11rem;
+    -webkit-animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+    animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+  
+button.btn:hover {
+    color: white;
+}
+
+button.btn:hover::after {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    -webkit-animation: none;
+    animation: none;
+    left: 0rem;
+}
+
+/*------- download button -------*/
+.btnn {
+    border-radius: 4px;
+    border: 2px solid #000;
+    color: #000;
+    display: inline-block;
+    margin: 0 0.25em;
+    overflow: hidden;
+    padding: 24px 60px 24px 16px;
+    position: relative;
+    text-decoration: none;
+    line-height: 1;
+    margin-top: 30px;
+}
+
+  .btnn .btn-content {
+    font-size: 1em;
+    line-height: 1.2;
+    padding: 0 26px;
+    position: relative;
+    right: 0;
+    transition: right 300ms ease;
+    display: block;
+    text-align: left;
+}
+
+.btnn .icon {
+    border-left: 1px solid #000;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transition: all 300ms ease;
+    transform: translateY(-50%);
+    width: 58px;
+    height: 70%;
+}
+
+.btnn .icon i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btnn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+.btnn:hover .btn-content {
+    right: 100%;
+    color: #000;
+}
+
+.btnn:hover .icon {
+    border-left: 0;
+    font-size: 1.8em;
+    width: 100%;
+    color: #fff;
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btnn:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}

@@ -1,0 +1,39 @@
+.logo {
+    width: auto;
+    height: 80px;
+}
+
+.content {
+    width: 60%;
+    text-align: center;
+}
+
+main > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+main > .container > .content > .row > .col-4 {
+    margin-bottom: 40px;
+}
+
+.above-footer {
+    width: 30%;
+}
+
+.jquery {
+    width: 150px;
+}
+
+.mysql {
+    width: 100px;
+}
+
+.php {
+    width: 120px;
+}

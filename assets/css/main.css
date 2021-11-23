@@ -1,36 +1,68 @@
+/*------- font -------*/
+@font-face {
+    font-family: orkney;
+    src: url(fonts/orkney/Orkney\ Light.otf);
+}
+
+@font-face {
+    font-family: orkneyy;
+    src: url(fonts/orkney/Orkney\ Regular.otf);
+}
+
+/*------- reset -------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*------- main -------*/
+main{
+    height: 65vh;
+    position: relative;
+
+}
+
 .content {
     padding-top: 3%;
 }
 
 .avatar {
     width: 60%;
-    padding-bottom: 3%;
-}
-
-footer {
-    background-color: #007bff;
-    padding: 5% 0px 5% 0px;
-}
-
-footer > div > div {
-    margin: 0px 30% 0px 30%;
-}
-
-.image > img {
-    width: 90%;
-    margin-left: 5%;
-}
-
-footer p {
-    color: #fff;
-}
-
-.oui {
-    text-align: right;
-    padding: 0;
 }
 
 body {
     font-family: orkney;
+    height: 100vh;
+}
+
+/*------- footer -------*/
+footer p {
+    color: #fff;
+}
+
+footer .container-fluid {
+    background-color: #007bff;
+    height: 25vh;
+}
+
+.above-footer {
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    height: auto;
+}
+
+footer img {
+    width: 30%;
+}
+
+footer .footer-div {
+    width: 50%;
+}
+
+footer .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
