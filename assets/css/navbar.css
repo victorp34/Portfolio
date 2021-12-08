@@ -11,7 +11,7 @@ a {
   margin-bottom: 0;
 }
   
-.active > a span {
+.active {
   background: #007bff;
   color: #000;
 }
@@ -42,16 +42,17 @@ a {
   border-radius: 30px;
 }
 
-h1 > a {
+.navbar-brand {
   color: #007bff;
   border-width: 2px;
   border-style: solid;
   border-color: #007bff;
-  padding: 10px 30px;
+  padding: 8px 30px;
   border-radius: 30px;
+  margin-left: 50px;
 }
 
-h1 > a:hover {
+.navbar-brand:hover {
   background-color: #007bff;
   color: #fff;
 }
@@ -65,3 +66,8 @@ header{
   height: 10vh;
 }
 
+.navbar {
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+}
