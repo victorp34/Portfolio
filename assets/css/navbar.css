@@ -68,6 +68,6 @@ header{
 
 .navbar {
   background-color: white;
-  z-index: 10;
+  z-index: 5;
   text-align: center;
 }
